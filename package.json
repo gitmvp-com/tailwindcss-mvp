@@ -1,0 +1,38 @@
+{
+  "name": "tailwindcss-mvp",
+  "version": "1.0.0",
+  "description": "MVP version of Tailwind CSS - A minimal utility-first CSS framework",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tailwindcss-mvp": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "demo": "node dist/cli.js demo/index.html -o demo/output.css",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "css",
+    "utility-first",
+    "tailwindcss",
+    "mvp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "postcss": "8.5.6"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
+  }
+}
